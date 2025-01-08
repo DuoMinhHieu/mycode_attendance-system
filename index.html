@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance System</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+
+</head>
+<body>
+    <div class="container">
+        <h1>Attendance System</h1>
+        <div class="card">
+            <button id="checkin-btn">Check-in</button>
+            <button id="checkout-btn">Check-out</button>
+        </div>
+        <div class="leave-request">
+            <h2>Leave Request</h2>
+            <form id="leave-form">
+                <label for="leave-date">Date:</label>
+                <input type="date" id="leave-date" required>
+                <label for="reason">Reason:</label>
+                <textarea id="reason" rows="3" required></textarea>
+                <button type="submit">Submit Request</button>
+            </form>
+        </div>
+        <div id="log">
+            <h2>Logs</h2>
+            <ul id="log-list"></ul>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
